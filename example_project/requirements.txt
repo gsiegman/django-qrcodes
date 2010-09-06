@@ -1,4 +1,0 @@
-django==1.2.1
-south==0.7.2
-pygooglechart==0.2.1
-
