@@ -1,0 +1,32 @@
+ABOUT
+
+	A django app that makes it easy to include QR codes in
+	your templates.
+
+COMING SOON
+
+	Better documentation
+	
+	Adding another option to download the QR code image and
+	store it.
+	
+	Optional support for celery to allow asynchronous generation and/or
+	downloading of QR code images.
+	
+USAGE
+	String w/ no size provided
+	{% qr_code 'Hello World!' %}
+	
+	or
+	
+	String w/ size provided
+	{% qr_code 'Hello World' 250 %}
+	
+	or
+	
+	String variable w/ no size provided
+	{% qr_code hello %}
+	
+	String variable w/ size provided
+	{% qr_code hello 250 %}
+	

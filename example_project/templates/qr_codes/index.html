@@ -1,0 +1,23 @@
+{% load qr_tags %}
+
+<style type='text/css'>
+	dl dt {
+		padding: 20 0 20 0;
+	}
+</style>
+
+<dl class="size-default">
+	<dt>Default Size - from string</dt>
+		<dd><img src="{% qr_code 'Hello World!' %}" /></dd>
+
+	<dt>Default Size - from string variable</dt>
+		<dd><img src="{% qr_code hello %}" /></dd>
+</dl>
+
+<dl class="size-provided">
+	<dt>Provided Size - from string</dt>
+		<dd><img src="{% qr_code 'Hello World!' 250 %}" /></dd>
+
+	<dt>Provided Size - from string variable</dt>
+		<dd><img src="{% qr_code hello  250 %}" /></dd>
+</dl>
